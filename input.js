@@ -1,40 +1,5 @@
 let connection;
 
-
-const handleUserInput = function (key) {
-  if (key === '\u0003') {
-    process.exit();
-  };
-
-  if (key === 'w') {
-    conn.write("Move: up");
-  };
-
-  if (key === 'a') {
-    conn.write("Move: left");
-  };
-
-  if (key === 's') {
-    conn.write("Move: down");
-  };
-
-  if (key === 'd') {
-    conn.write("Move: right");
-  };
-
-  if (key === 'z') {
-    conn.write("Say: whatsUp");
-  };
-
-  if (key === 'x') {
-    conn.write("Say: lol");
-  };
-
-  if (key === 'c') {
-    conn.write("Say: howdy");
-  };
-};
-
 const setupInput = (conn) => {
   connection = conn;
   const stdin = process.stdin;
@@ -47,4 +12,38 @@ const setupInput = (conn) => {
   return stdin;
 };
 
-module.exports = {setupInput}
+const handleUserInput = function(key) {
+  if (key === '\u0003') {
+    process.exit();
+  }
+
+  if (key === 'w') {
+    connection.write("Move: up");
+  }
+
+  if (key === 'a') {
+    connection.write("Move: left");
+  }
+
+  if (key === 's') {
+    connection.write("Move: down");
+  }
+
+  if (key === 'd') {
+    connection.write("Move: right");
+  }
+
+  if (key === 'z') {
+    connection.write("Say: whatsUp");
+  }
+
+  if (key === 'x') {
+    connection.write("Say: lol");
+  }
+
+  if (key === 'c') {
+    connection.write("Say: howdy");
+  }
+};
+
+module.exports = {setupInput};
