@@ -7,10 +7,8 @@ This is simply a multiplayer take on the genre.
 Before you can run this client, you will need to be running the server side which you can download and install from [here](https://github.com/lighthouse-labs/snek-multiplayer). 
 
 ## Final Product 🐍
-
-![snake game in action](image-1.png)
-![output of console for a successful connection](image-2.png)
-
+![snake game in action](screenshots/image-1.png)
+![output of console for a successful connection](screenshots/image-2.png)
 
 ## Getting Started 🐍
 
